@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoTarek</title>
+    <link rel="stylesheet" href="../static/css/register.css">
+    <meta name = "viewport" content = "width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0"/>
+    <meta thhp-equive="X-UA-Compatible" content="IE-edge, chrome=1">
+    <meta name="vievpart" content="width=device-width, initial-scale-1.0">
+</head>
+<body>
+    <div class="content">
+        <section class="main">
+          <h1 id="title" class="ms">Heart Detection</h1>
+          <p id="description">Please fill all required info.</p>
+          <form id="survey-form" method="post" action="{{url_for('predict')}}">
+              <label class="form-label" id="name-label" for="age">Age</label>
+              <br>
+              <input id="age" name="age" type="text" placeholder="Enter your Age" required>
+              <br>
+              <label class="form-label" id="email-label" for="sex">Sex</label>
+              <br>
+              <input id="sex" name="sex" type="text" placeholder="Enter your Sex" required>
+              <br>
+              <label class="form-label" id="email-label" for="cp">cp</label>
+              <br>
+              <input id="cp" name="cp" type="text" placeholder="Enter your cp" required>
+              <br>
+              <label class="form-label" id="email-label" for="trestbps">trestbps</label>
+              <br>
+              <input id="trestbps" name="trestbps" type="text" placeholder="Enter your trestbps" required>
+              <br>
+              <label class="form-label" id="email-label" for="chol">chol</label>
+              <br>
+              <input id="chol" name="chol" type="text" placeholder="Enter your chol" required>
+              <br>
+              <label class="form-label" id="email-label" for="fbs">fbs</label>
+              <br>
+              <input id="fbs" name="fbs" type="text" placeholder="Enter your fbs" required>
+              <br>
+              <label class="form-label" id="name-label" for="restecg">restecg</label>
+              <br>
+              <input id="restecg" name="restecg" type="text" placeholder="Enter your restecg" required>
+              <br>
+              <label class="form-label" id="name-label" for="thalach">thalach</label>
+              <br>
+              <input id="thalach" name="thalach" type="text" placeholder="Enter your thalach" required>
+              <br>
+              <label class="form-label" id="name-label" for="exang">exang</label>
+              <br>
+              <input id="exang" name="exang" type="text" placeholder="Enter your exang" required>
+              <br>
+              <label class="form-label" id="name-label" for="oldpeak">oldpeak</label>
+              <br>
+              <input id="oldpeak" name="oldpeak" type="text" placeholder="Enter your oldpeak" required>
+              <br>
+              <label class="form-label" id="name-label" for="slope">slope</label>
+              <br>
+              <input id="slope" name="slope" type="text" placeholder="Enter your slope" required>
+              <br>
+              <label class="form-label" id="name-label" for="ca">ca</label>
+              <br>
+              <input id="ca" name="ca" type="text" placeholder="Enter your ca" required>
+              <br>
+              <label class="form-label" id="name-label" for="thal">thal</label>
+              <br>
+              <input id="thal" name="thal" type="text" placeholder="Enter your thal" required>
+              <br>
+              <button id="submit" type="submit">Submit</button>
+            </form>
+<br><br><br><br><br><br><br><br>
+          <h1 class='res'>  {{ prediction_text }} </h1>
+        </section>
+</section>
+    </div>
+</body>
+</html>

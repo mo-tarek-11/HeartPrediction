@@ -1,0 +1,20 @@
+body
+{
+    background-color: black;
+}
+h1
+{
+    color: aquamarine;
+    text-align: center;
+}
+button
+{
+    text-align: center;
+    font-size: 100%;
+    color: aquamarine;
+    background-color: blueviolet;
+}
+a
+{
+    text-decoration: none;
+}
